@@ -1,7 +1,7 @@
 # dataset 
 I took 2000 images from the Stanford dogs dataset, and synthetically added noise to it.
 
-noise types used are: (impuls noise - gaussian noise - uniform noise - rayleigh noise - erling noise - exponential noise).
+noise types used are: `(impuls noise - gaussian noise - uniform noise - rayleigh noise - erling noise - exponential noise)`.
 
 images shape: 3x128x128.
 
@@ -9,16 +9,16 @@ number of images: 2000 * 6 = 12000.
 
 I normalized images for better convergence. 
 
-#challenge 
-I insisted on working on this project locally on my device (16 GB of RAM) to face the challenge of optimization. Not claiming I didn't have any system crashes in the middle, but from mistakes we learn :) 
+# challenge 
+I insisted on working on this project locally on my device (16 GB of RAM, RTX 3050 4GB VRAM) to face the challenge of optimization for both RAM and VRAM. Not claiming I didn't have any system crashes in the middle, but from mistakes we learn :) 
 
-I used multiprocessing to create our 12000 RGB 128x128 images (without multiprocessing it took about 30m, but with multiporcessing it took only around 5m).
+**I used multiprocessing to create our 12000 RGB 128x128 images (without multiprocessing it took about 30m, but with multiporcessing it took only around 5m).**
 
 # network 
 ## archeticture
 I used U-net architecture, Mixing CNN and auto-encoder in one architecture.
 
-U-net example:
+## U-net example:
 <img width="1494" height="748" alt="image" src="https://github.com/user-attachments/assets/8b14676b-8ac3-4bba-b09f-e9892756471f" />
 
 
@@ -26,7 +26,7 @@ The idea is simple, use CNNs to increase the number of filters and decrease filt
 
 after that, user Convolution transpose to invert the first part (the decoder part).
 
-I used batch-norm for stable training and skip connections to prevent vanshing gradient. 
+**I used batch-norm for stable training and skip connections to prevent vanshing gradient.**
 
 
 
