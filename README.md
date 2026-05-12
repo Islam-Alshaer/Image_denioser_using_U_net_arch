@@ -49,3 +49,9 @@ Adam optimizer was used.
 <img width="1165" height="801" alt="image" src="https://github.com/user-attachments/assets/d327c34f-10af-4577-b21f-6286c9bd1c10" />
 
 # effect on clear images
+It doesn't effect clear images, they come out as clear as they entered: 
+<img width="1161" height="371" alt="image" src="https://github.com/user-attachments/assets/1c748492-ed2a-4063-8715-19ad11c0583f" />
+<img width="1157" height="372" alt="image" src="https://github.com/user-attachments/assets/71e42ae0-28d8-4574-b4bb-f4354c258fba" />
+
+
+
